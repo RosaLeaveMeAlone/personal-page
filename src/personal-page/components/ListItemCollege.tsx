@@ -9,7 +9,7 @@ export const ListItemCollege = ({
     image = undefined,
     dateStart = undefined,
     dateEnd = undefined,
-} : EducationData) => {
+} : EducationData | any) => { //Add any to resolve build troubles
   return (
     <>
         <ListItem>

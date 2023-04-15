@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+    .nav-mobile {
+        flex-direction: column;
+    }
+
+    .wd-100-mobile {
+        max-width: 100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .MuiImageList-root {
+      column-count: 2 !important;
+    }
+  }

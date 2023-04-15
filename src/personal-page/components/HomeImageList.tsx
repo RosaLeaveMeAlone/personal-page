@@ -1,10 +1,12 @@
-import { ImageList, ImageListItem } from "@mui/material"
+import { ImageList, ImageListItem, useMediaQuery } from "@mui/material"
 import { homeImages } from "../data"
+import { theme } from "../../theme";
 
 
 export const HomeImageList = () => {
+  const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
   return (
-    <ImageList sx={{ width: 500, height: '82vh',overflow: "hidden" }} cols={3} rowHeight={164}>
+    <ImageList sx={{ width: matchDownMd ? '80vw' : 500, height: '82vh',overflow: "hidden" }} cols={ 3 } rowHeight={164}>
       {homeImages.map((item) => (
         <ImageListItem key={item.img}>
           <img

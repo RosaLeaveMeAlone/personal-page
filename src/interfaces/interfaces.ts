@@ -16,7 +16,7 @@ export interface SkillCardProps {
 
 export interface ListGenericProps {
   type: ListType;
-  data: EducationData[] | CoursesData[];
+  data: EducationData[] | CoursesData[] | ExperienceData[];
   title: string;
 }
 

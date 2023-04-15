@@ -8,7 +8,7 @@ export const ListItemCourse = ({
     image,
     issuingCompany,
     certificateUrl,
-} : CoursesData) => {
+} : CoursesData | any) => { //Add any to resolve build troubles
   return (
     <>
         <ListItem>

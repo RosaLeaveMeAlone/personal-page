@@ -9,7 +9,7 @@ export const ListItemExperience = ({
   country,
   description,
   image = undefined,
-}: ExperienceData) => {
+}: ExperienceData | any) => { //Add any to resolve build troubles
   return (
     <>
         <ListItem>
